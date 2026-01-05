@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { motion } from "motion/react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { SearchAutocomplete } from "./SearchAutocomplete"
 
 const HeroSection = () => {
     return (
@@ -33,10 +33,7 @@ const HeroSection = () => {
                         Discover the best rental properties in your area with our premium selection.
                     </p>
                     <div className="flex justify-center max-w-sm mx-auto items-center shadow-2xl rounded-lg overflow-hidden ring-1 ring-white/10">
-                        <Input
-                            placeholder="Search by city, neighborhood, or zip..."
-                            className="h-12 bg-white/95 border-none rounded-none flex-1 px-6 text-primary-900 placeholder:text-primary-500 focus-visible:ring-0 focus-visible:ring-offset-0 text-base"
-                        />
+                        <SearchAutocomplete />
                         <Button className="h-12 cursor-pointer rounded-none px-8 bg-secondary-700/95 hover:bg-secondary-700 text-white font-semibold text-base transition-all duration-300 ease-in-out border-none active:scale-95">
                             Search
                         </Button>
