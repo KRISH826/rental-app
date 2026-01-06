@@ -414,6 +414,8 @@ dashboard-container {
   border-radius: var(--radius);
   padding: 2rem !important;
   border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--background));
+  box-shadow: 0 0 10px hsl(var(--shadow));
 }
 
 [data-amplify-authenticator] [data-amplify-form] {
